@@ -1,0 +1,93 @@
+/* Estilo de la barra de búsqueda */
+.search-bar {
+    background-color: #ffffff;
+    border-radius: 24px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    padding: 7px;
+    max-width: 1200px;
+}
+
+.search-bar input[type="text"],
+.search-bar input[type="date"],
+.search-bar input[type="number"] {
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    flex-grow: 1;
+}
+
+.search-bar input[type="text"]::placeholder,
+.search-bar input[type="date"]::placeholder,
+.search-bar input[type="number"]::placeholder {
+    color: #adb5bd;
+}
+
+.search-bar button {
+    background-color: #4caac4;
+    color: #fff;
+    font-weight: bold;
+    border-radius: 24px;
+    padding: 10px 16px;
+}
+
+/* Estilo de la sección de propiedades */
+.property-list-section .section-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+/* Estilo de las tarjetas de propiedad */
+.card.custom-card {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.card.custom-card:hover {
+    transform: translateY(-5px);
+}
+
+.card.custom-card .carousel-inner {
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    height: 200px; /* Altura fija para el carrusel */
+}
+
+.card.custom-card .carousel-item img {
+    object-fit: cover;
+    height: 200px; /* Altura fija para las imágenes */
+}
+
+.card.custom-card .card-body {
+    padding: 15px;
+    height: 150px; /* Altura fija para el contenido de la tarjeta */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card.custom-card .card-title {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.card.custom-card .card-text {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.card.custom-card .btn {
+    background-color: #4caac4;
+    border: none;
+    font-weight: bold;
+    border-radius: 8px;
+    align-self: flex-start;
+}
+
+.card.custom-card .btn:hover {
+    background-color: #0480b5;
+}
+

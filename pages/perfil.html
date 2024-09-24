@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil de Usuario</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="container mt-5" role="main">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="card">
+                    <img src="https://via.placeholder.com/150" id="profile-image" class="card-img-top" alt="Profile Picture">
+                    <div class="card-body">
+                        <h5 id="profile-name" class="card-title">Nombre del Usuario</h5>
+                        <p id="profile-email" class="card-text">Correo del Usuario</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-9">
+                <h1>Bienvenido, <span id="welcome-name"></span></h1>
+                <p>Esta es tu página de perfil.</p>
+
+                <h3>Reservas</h3>
+                <div id="reservations"></div>
+
+                <h3>Comentarios</h3>
+                <div id="reviews"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer-placeholder"></div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="../scripts/perfil.js"></script>
+</body>
+</html>

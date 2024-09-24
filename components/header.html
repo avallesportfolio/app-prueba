@@ -1,0 +1,115 @@
+<header class="border-bottom">
+  <div class="container d-flex flex-wrap align-items-center justify-content-between py-2 mb-2">
+    <a href="../index.html" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+      <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+        <circle cx="20" cy="20" r="20" fill="#007bff"/>
+        <text x="20" y="25" font-size="20" text-anchor="middle" fill="#fff" font-family="Arial, sans-serif">I</text>
+      </svg>
+    </a>
+    <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
+      <li><a href="../index.html" class="nav-link px-2" id="homeLink">Home</a></li>
+      <li><a href="./explorar.html" class="nav-link px-2" id="explorarLink">Explorar</a></li>
+      <li><a href="./registrar_aloj.html" class="nav-link px-2" id="registrarLink">Registrar alojamiento</a></li>
+    </ul>
+    <div class="col-md-3 text-end d-flex justify-content-end">
+      <div class="dropdown">
+        <button class="btn profile-button d-flex align-items-center p-1" type="button" id="profileDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+          <img src="https://via.placeholder.com/40" alt="Profile" class="rounded-circle">
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="profileDropdown">
+          <li><a class="dropdown-item" href="./login.html" data-bs-toggle="modal" data-bs-target="#loginModal">Inicia sesión</a></li>
+          <li><a class="dropdown-item" href="./registro.html" data-bs-toggle="modal" data-bs-target="#registerModal">Regístrate</a></li>
+          <li><a class="dropdown-item" href="./ayuda.html">Ayuda</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Modal de inicio de sesión -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="loginModalLabel">Inicio de sesión</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="login-container">
+          <div class="login-box">
+            <h2 class="login-title">Inicio de sesión</h2>
+            <p class="login-welcome">¡Bienvenido! Por favor, inicia sesión para continuar.</p>
+            <form action="#">
+              <div class="form-group mb-3">
+                <input type="email" class="form-control" placeholder="Correo electrónico" required>
+              </div>
+              <div class="form-group mb-3">
+                <input type="password" class="form-control" placeholder="Contraseña" required>
+              </div>
+              <div class="form-check mb-3">
+                <input type="checkbox" class="form-check-input" id="remember">
+                <label class="form-check-label" for="remember">Recordar contraseña</label>
+                <a href="#" class="forgot-password float-end">¿Olvidaste tu contraseña?</a>
+              </div>
+              <div class="d-grid mb-3">
+                <a href="./perfil.html" class="btn btn-primary">Iniciar Sesión</a>
+              </div>
+              <div class="text-center mb-3">
+                <button class="btn btn-outline-danger w-100">Iniciar sesión con Google</button>
+              </div>
+            </form>
+            <div class="text-center">
+              ¿No tienes una cuenta? <a href="./registro.html" data-bs-toggle="modal" data-bs-target="#registerModal" data-bs-dismiss="modal">Regístrate aquí</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal de registro -->
+<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content border-0 shadow-lg">
+      <div class="modal-header border-0">
+        <h5 class="modal-title" id="registerModalLabel">Registro</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <div class="register-container">
+          <div class="register-box">
+            <h2 class="register-title">Registro</h2>
+            <p class="register-welcome">¡Bienvenido! Por favor, regístrate para continuar.</p>
+            <form action="#">
+              <div class="form-group mb-3">
+                <input type="text" class="form-control" placeholder="Nombre completo" required>
+              </div>
+              <div class="form-group mb-3">
+                <input type="email" class="form-control" placeholder="Correo electrónico" required>
+              </div>
+              <div class="form-group mb-3">
+                <input type="password" class="form-control" placeholder="Contraseña" required>
+              </div>
+              <div class="form-group mb-3">
+                <input type="password" class="form-control" placeholder="Confirmar contraseña" required>
+              </div>
+              <div class="d-grid mb-3">
+                <button type="submit" class="btn btn-primary">Registrarse</button>
+              </div>
+              <div class="text-center mb-3">
+                <button class="btn btn-outline-danger w-100">Registrarse con Google</button>
+              </div>
+            </form>
+            <div class="text-center">
+              ¿Ya tienes una cuenta? <a href="./login.html" data-bs-toggle="modal" data-bs-target="#loginModal" data-bs-dismiss="modal">Inicia sesión aquí</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
